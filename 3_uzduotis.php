@@ -45,9 +45,8 @@ $holidays = [
 ];
 
 function exercises3(array $holidaysList){
-	
     for ($i = 0; $i < count($holidaysList); $i++) {
-    	if($holidaysList[$i]['price'] !==null) {
+    	if($holidaysList[$i]['price'] !== null) {
         	$destination = $holidaysList[$i]['destination'];
         	$titles = $holidaysList[$i]['title'];
         	$total = $holidaysList[$i]['price'] * $holidaysList[$i]['tourists'];
@@ -62,4 +61,5 @@ function exercises3(array $holidaysList){
         }
     }
 }
+
 exercises3($holidays);
